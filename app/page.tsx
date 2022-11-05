@@ -36,6 +36,7 @@ export default function Home() {
     }
 
     try {
+      setInferencing(true)
       await _infer();
     } catch (e) {
       console.error("error :: ", e)
