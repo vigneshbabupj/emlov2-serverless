@@ -62,11 +62,11 @@ export default function Home() {
           </a>
         </h1>
         <div className="mt-10 text-lg">
-          Select a PNG Image from <a href="https://github.com/YoongiKim/CIFAR-10-images/tree/master/test" target="_blank" className='text-blue-600'>Example</a>
+          Select a JPG Image from <a href="https://github.com/YoongiKim/CIFAR-10-images/tree/master/test" target="_blank" className='text-blue-600'>Example</a>
         </div>
         <div className='mt-10 flex flex-row space-x-5 text-xl'>
           <div>
-            <input className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file" accept='image/png' onChange={(e) => {
+            <input className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file" accept='image/jpg' onChange={(e) => {
               console.log("got files :: ", e.target.files)
 
               if (!e.target.files) return;
